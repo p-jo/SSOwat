@@ -12,7 +12,9 @@
   <meta name="robots" content="noindex, nofollow">
 
   <!-- Stylesheets -->
-  <link rel="stylesheet" href="assets/css/ynh-style.css">
+  <!--  <link rel="stylesheet" href="assets/css/ynh-style.css"> -->
+  <link rel="stylesheet" href="https://unpkg.com/tachyons@4.10.0/css/tachyons.min.css"/>
+  <script src="https://unpkg.com/feather-icons"></script>
 
   <!-- Icons -->
   <link rel="shortcut icon" href="assets/icons/favicon.ico">
@@ -32,11 +34,14 @@
   <meta name="msapplication-TileColor" content="#41444f">
   <meta name="msapplication-TileImage" content="/mstile-144x144.png">
 </head>
-<body class="{{#connected}}logged{{/connected}}">
+<body class="{{#connected}}logged{{/connected}} w-100 sans-serif bg-washed-blue">
 
+  <!--
   <h1 id="logo" class="logo">
       <img src="assets/img/logo-ynh-white.svg"/><span class="element-invisible">Yunohost</span>
   </h1>
+  -->
+    <h1 class="f1 lh-title">Collective Tools</h1>
 
   <div class="overlay">
     {{#flash_win}}
@@ -50,4 +55,3 @@
     {{#flash_info}}
     <div class="wrapper messages info">{{.}}</div>
     {{/flash_info}}
-
